@@ -1,5 +1,5 @@
 import React from 'react'
-import Singlemessage from './singlemessage'
+import Singlemessage from './Singlemessage'
 import {useSelector} from "react-redux"
 import useGetRealTimeMessage from './hooks/useGetrealtimemsg'
 
