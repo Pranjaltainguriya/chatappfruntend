@@ -1,0 +1,221 @@
+.home{
+    width: 100%;
+    height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow: hidden;   
+}
+.sidebar{
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(177, 175, 175, 0.404);
+    border-right: 2px solid white;
+}
+.messagebox{
+      width: 70%;
+    height: 100vh;
+    
+}
+
+/*  sildebar csss  */
+
+
+/* navbar */
+.Navbar{
+    width: 100%;
+    display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow: hidden; 
+ height: 60px;
+ border-bottom: 2px solid white;
+}
+.Navbar img{
+    width: 30px;
+    border-radius: 50%;
+}
+.navinput{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+padding: 4px 7px 4px;
+
+background-color: rgba(241, 237, 237, 0.336);
+
+
+}
+.navinput input{
+    width: 80%;
+    margin-left: 10px;
+    color: black;
+border: none;
+padding: 5px 8px 5px;
+background-color:transparent
+
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+input::placeholder {
+  color:black;
+  
+}
+.navinput button{
+font-size: larger;
+background-color:transparent;
+border: none;
+}
+
+
+/* card css */
+.card-body{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; 
+    overflow: auto;
+    
+}
+
+.contant{
+    
+    width: 100%;
+  
+    height: 50px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+  
+    border-bottom: 1px solid black;
+    
+    background-color: rgba(148, 161, 173, 0.747);
+   
+
+}
+.selected{
+     width: 100%;
+  
+    height: 50px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+  
+    border-bottom: 1px solid black;
+    background-color: rgba(110, 117, 124, 0.747);
+} 
+
+
+
+.contant:hover{
+ background-color: rgba(110, 117, 124, 0.747);
+
+}
+.cntantimage-container img{
+    width: 40px;
+    border-radius: 50%;
+}
+.lastmsg{
+    width: 80%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.lastseen{
+    margin-right: 10px;
+    justify-self: flex-end;
+    color: rgb(57, 57, 58);
+}
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Background of the track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* image pop  */
+.image-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.image-popup-content {
+  position: relative;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.image-popup-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+/* extra classes for online and ofline user */
+.online{
+   margin-right: 10px;
+    justify-self: flex-end;
+    color: rgb(94, 226, 175);
+}
+.ofline{
+   margin-right: 10px;
+    justify-self: flex-end;
+    color: rgb(57, 57, 58);
+}
+
+/* MEDIA QUIRES FOR WEBPAGE */
+@media (max-width: 600px) {
+
+     .sidebar{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(177, 175, 175, 0.404);
+    border-right: 2px solid white;
+
+    
+}
+.messagebox{
+      width: 0px;
+    height: 100vh;
+    
+}
+}
