@@ -19,7 +19,7 @@ const navigate=useNavigate()
 const dispatch=useDispatch()
   const onSubmit = async(data) => {
    try {
-  const res= await axios.post("http://localhost:8080/api/user/login" ,data ,{withCredentials:true})
+  const res= await axios.post("https://chatappbackend-theta.vercel.app/api/user/login" ,data ,{withCredentials:true})
   
 console.log(res);
   toast.success("login successfully")
