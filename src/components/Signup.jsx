@@ -17,7 +17,7 @@ const navigate=useNavigate()
   const onSubmit = async (data) => {
    
 try {
-  const res= await axios.post("http://localhost:8080/api/user/ragister" ,data ,{withCredentials:true})
+  const res= await axios.post("https://chatappbackend-theta.vercel.app/api/user/ragister" ,data ,{withCredentials:true})
 if(res.data){
   console.log(res.data)
   navigate("/login")
